@@ -1,10 +1,9 @@
 // src/App.js
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import "./App.css";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="App">
@@ -12,39 +11,35 @@ function App() {
       <nav className="navbar">
         <h2 className="logo">MyPortfolio</h2>
 
-        {/* Toggle Button */}
-        <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        {/* Nav Links */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+          <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+        </ul>
+
+        {/* Hamburger Icon */}
+        <div
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           ☰
         </div>
-
-        <ul className={isOpen ? "nav-links active" : "nav-links"}>
-          <li><a href="#hero" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-          <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
-          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
-        </ul>
       </nav>
 
       {/* Hero Section */}
       <section id="hero" className="hero">
-        <motion.h1
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
+        <h1 className="animate">
           Hi, I’m <span className="highlight">Ilham</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-        >
+        </h1>
+        <p className="animate delay-1">
           Web Developer | Cloud Enthusiast | DevOps Learner
-        </motion.p>
+        </p>
       </section>
 
       {/* About Me */}
-      <section id="about" className="about">
+      <section id="about" className="about animate delay-2">
         <h2>About Me</h2>
         <p>
           Saya seorang developer yang suka membuat aplikasi modern dengan fokus
@@ -53,29 +48,29 @@ function App() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="projects">
+      <section id="projects" className="projects animate delay-2">
         <h2>My Projects</h2>
         <div className="project-grid">
-          <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <div className="project-card animate">
             <h3>Project 1</h3>
             <p>Sistem Penerimaan Mahasiswa Baru berbasis cloud.</p>
-          </motion.div>
-          <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          </div>
+          <div className="project-card animate delay-1">
             <h3>Project 2</h3>
             <p>Aplikasi CBT (Computer Based Test) dengan Laravel.</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Contact */}
-      <section id="contact" className="contact">
+      <section id="contact" className="contact animate delay-2">
         <h2>Contact Me</h2>
         <p>Email: ilham@example.com</p>
         <p>LinkedIn: linkedin.com/in/ilham</p>
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer animate delay-2">
         <p>© 2025 Ilham Portfolio. All rights reserved.</p>
       </footer>
     </div>
