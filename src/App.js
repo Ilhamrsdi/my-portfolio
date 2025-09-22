@@ -29,14 +29,28 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="hero">
-        <h1 className="animate">
-          Hi, I’m <span className="highlight">Ilham</span>
-        </h1>
-        <p className="animate delay-1">
-          Web Developer | Cloud Enthusiast | DevOps Learner
-        </p>
-      </section>
+     <section id="hero" className="hero">
+  <div className="hero-content">
+    <div className="hero-text">
+      <h1 className="animate">
+        Hi, I’m <span className="highlight">Ilham</span>
+      </h1>
+      <p className="animate delay-1">
+        Web Developer | Cloud Enthusiast | DevOps Learner
+      </p>
+    </div>
+
+    {/* Card Foto */}
+    <div className="hero-card animate delay-2">
+      <img
+        src="/images/profile.jpg" // ganti dengan foto kamu
+        alt="Profile Ilham"
+        className="hero-photo"
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* About Me */}
       <section id="about" className="about animate delay-2">
