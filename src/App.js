@@ -59,26 +59,46 @@ function App() {
       <section id="about" className="about animate delay-2">
         <h2>About Me</h2>
         <p>
-         Halo, saya Ilham, seorang fresh graduate dari program studi Teknik Teknologi Rekayasa Perangkat Lunak. Selama masa studi, saya mendalami konsep pemrograman, manajemen basis data, analisis sistem, serta implementasi metodologi pengembangan perangkat lunak. Saya memiliki pengalaman dalam membuat aplikasi berbasis web dan mobile, baik secara individu maupun tim, serta terbiasa menggunakan teknologi seperti Laravel, React, dan PostgreSQL.
-
-Sebagai lulusan baru, saya bersemangat untuk terus belajar dan beradaptasi dengan teknologi terbaru. Saya percaya bahwa kemampuan problem solving, kerja tim, dan keinginan untuk berkembang akan menjadi modal berharga untuk berkontribusi di dunia kerja, khususnya di bidang software engineering
+         Halo, saya Ilham, Lulusan D-4 Teknologi Rekayasa Perangkat Lunak dari Politeknik Negeri
+Banyuwangi dengan pengalaman di bidang pengembangan aplikasi
+berbasis web dan mobile. Terbiasa bekerja sama dengan tim maupun
+individu dalam pengembangan perangkat lunak modern serta memiliki
+pengalaman dalam membangun sistem berbasis Laravel, React, dan
+RESTful API. Saya memiliki motivasi tinggi untuk terus belajar teknologi baru
+dan berkontribusi dalam pengembangan solusi digital yang efektif.
         </p>
       </section>
 
       {/* Projects */}
-      <section id="projects" className="projects animate delay-2">
-        <h2>My Projects</h2>
-        <div className="project-grid">
-          <div className="project-card animate">
-            <h3>Project 1</h3>
-            <p>Sistem Penerimaan Mahasiswa Baru berbasis cloud.</p>
-          </div>
-          <div className="project-card animate delay-1">
-            <h3>Project 2</h3>
-            <p>Aplikasi CBT (Computer Based Test) dengan Laravel.</p>
-          </div>
-        </div>
-      </section>
+    <div className="projects-grid">
+  <div className="project-card animate">
+    <img 
+      src="/images/project/pmb.png" 
+      alt="Sistem PMB Cloud" 
+      className="project-image" 
+    />
+    <div className="project-content">
+      <h3>PMB</h3>
+      <p><strong>Sistem Penerimaan Mahasiswa Baru</strong> berbasis cloud, 
+      mempermudah proses pendaftaran, verifikasi, dan pengelolaan data 
+      calon mahasiswa secara online.</p>
+    </div>
+  </div>
+
+  <div className="project-card animate">
+    <img 
+      src="/images/project/rsudblambangan.png" 
+      alt="To Do List App" 
+      className="project-image" 
+    />
+    <div className="project-content">
+      <h3>Portal RSUD Blambangan</h3>
+      <p><strong>Web Portal RSUD Blambangan</strong> dengan CRUD di Laravel, 
+      dirancang untuk mempermudah pengelolaan aktivitas dan informasi  harian 
+      dengan UI yang sederhana.</p>
+    </div>
+  </div>
+  </div>
 
       {/* Contact */}
        <section id="contact" className="contact animate delay-2">
