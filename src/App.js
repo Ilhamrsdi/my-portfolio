@@ -42,8 +42,9 @@ function App() {
       <section id="about" className="about animate delay-2">
         <h2>About Me</h2>
         <p>
-          Saya seorang developer yang suka membuat aplikasi modern dengan fokus
-          pada clean code, user experience, dan cloud technology.
+         Halo, saya Ilham, seorang fresh graduate dari program studi Teknik Teknologi Rekayasa Perangkat Lunak. Selama masa studi, saya mendalami konsep pemrograman, manajemen basis data, analisis sistem, serta implementasi metodologi pengembangan perangkat lunak. Saya memiliki pengalaman dalam membuat aplikasi berbasis web dan mobile, baik secara individu maupun tim, serta terbiasa menggunakan teknologi seperti Laravel, React, dan PostgreSQL.
+
+Sebagai lulusan baru, saya bersemangat untuk terus belajar dan beradaptasi dengan teknologi terbaru. Saya percaya bahwa kemampuan problem solving, kerja tim, dan keinginan untuk berkembang akan menjadi modal berharga untuk berkontribusi di dunia kerja, khususnya di bidang software engineering
         </p>
       </section>
 
