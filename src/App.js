@@ -1,6 +1,9 @@
 // src/App.js
 import React, { useState } from "react";
 import "./App.css";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import "./Contact.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +12,7 @@ function App() {
     <div className="App">
       {/* Navbar */}
       <nav className="navbar">
-        <h2 className="logo">MyPortfolio</h2>
+        <h2 className="logo">Ilham Portfolio</h2>
 
         {/* Nav Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -29,28 +32,28 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-     <section id="hero" className="hero">
-  <div className="hero-content">
-    <div className="hero-text">
-      <h1 className="animate">
-        Hi, I’m <span className="highlight">Ilham</span>
-      </h1>
-      <p className="animate delay-1">
-        Web Developer | Cloud Enthusiast | DevOps Learner
-      </p>
-    </div>
+      <section id="hero" className="hero">
+      <div className="hero-content">
+        {/* Teks atas */}
+        <h1 className="animate">
+          Hi, I’m <span className="highlight">Ilham</span>
+        </h1>
 
-    {/* Card Foto */}
-    <div className="hero-card animate delay-2">
-      <img
-        src="/images/profile.jpg" // ganti dengan foto kamu
-        alt="Profile Ilham"
-        className="hero-photo"
-      />
-    </div>
-  </div>
-</section>
+        {/* Foto di tengah */}
+        <div className="hero-card animate delay-1">
+          <img
+            src="/images/profile.jpg"
+            alt="Profile Ilham"
+            className="hero-photo"
+          />
+        </div>
 
+        {/* Teks bawah */}
+        <p className="animate delay-2">
+          Web Developer | Cloud Enthusiast | DevOps Learner
+        </p>
+      </div>
+    </section>
 
       {/* About Me */}
       <section id="about" className="about animate delay-2">
@@ -78,12 +81,27 @@ Sebagai lulusan baru, saya bersemangat untuk terus belajar dan beradaptasi denga
       </section>
 
       {/* Contact */}
-      <section id="contact" className="contact animate delay-2">
-        <h2>Contact Me</h2>
-        <p>Email: ilham@example.com</p>
-        <p>LinkedIn: linkedin.com/in/ilham</p>
-      </section>
+       <section id="contact" className="contact animate delay-2">
+      <h2>Contact Me</h2>
 
+      <div className="contact-item">
+        <MdEmail className="contact-icon" />
+        <a href="mailto:muhamadilhamrosidi0707@gmail.com">
+          muhamadilhamrosidi0707@gmail.com
+        </a>
+      </div>
+
+      <div className="contact-item">
+        <FaLinkedin className="contact-icon" />
+        <a
+          href="https://www.linkedin.com/in/muhamad-ilham-rosidi-216880232/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn Profile
+        </a>
+      </div>
+    </section>
       {/* Footer */}
       <footer className="footer animate delay-2">
         <p>© 2025 Ilham Portfolio. All rights reserved.</p>

@@ -157,3 +157,36 @@ body {
 .delay-2 {
   animation-delay: 1s;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Susun vertikal */
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 25%; /* biar bulat */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 6px;
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 25%; /* avatar bulat */
+}
