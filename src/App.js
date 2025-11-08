@@ -16,10 +16,10 @@ function App() {
 
         {/* Nav Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          <li><a href="#hero" onClick={() => setMenuOpen(false)}>Beranda</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>Tentang</a></li>
+          <li><a href="#projects" onClick={() => setMenuOpen(false)}>Portofolio</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Kontak saya</a></li>
         </ul>
 
         {/* Hamburger Icon */}
@@ -57,7 +57,7 @@ function App() {
 
       {/* About Me */}
       <section id="about" className="about animate delay-2">
-        <h2>About Me</h2>
+        <h2>Tentang saya</h2>
         <p>
          Halo, saya Ilham, Lulusan D-4 Teknologi Rekayasa Perangkat Lunak dari Politeknik Negeri
 Banyuwangi dengan pengalaman di bidang pengembangan aplikasi
