@@ -102,7 +102,7 @@ dan berkontribusi dalam pengembangan solusi digital yang efektif.
 
       {/* Contact */}
        <section id="contact" className="contact animate delay-2">
-      <h2>Contact Me</h2>
+      <h2>Kontak saya</h2>
 
       <div className="contact-item">
         <MdEmail className="contact-icon" />
