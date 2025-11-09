@@ -69,37 +69,61 @@ dan berkontribusi dalam pengembangan solusi digital yang efektif.
         </p>
       </section>
 
-      {/* Projects */}
-    <div className="projects-grid">
-  <div className="project-card animate">
-    <img 
-      src="/images/project/pmb.png" 
-      alt="Sistem PMB Cloud" 
-      className="project-image" 
-    />
-    <div className="project-content">
-      <h3>PMB</h3>
-      <p><strong>Sistem Penerimaan Mahasiswa Baru</strong> berbasis cloud, 
-      mempermudah proses pendaftaran, verifikasi, dan pengelolaan data 
-      calon mahasiswa secara online.</p>
+<section id="projects" className="projects animate delay-2">
+  <h2 style={{ textAlign: "center", fontSize: "2rem", marginBottom: "2rem" }}>
+    Portofolio
+  </h2>
+
+  <div className="projects-grid">
+    <div className="project-card animate">
+      <img 
+        src="/images/project/pmb.png" 
+        alt="Sistem PMB Cloud" 
+        className="project-image" 
+      />
+      <div className="project-content">
+        <h3>PMB</h3>
+        <p><strong>Sistem Penerimaan Mahasiswa Baru</strong> berbasis cloud, 
+        mempermudah proses pendaftaran, verifikasi, dan pengelolaan data 
+        calon mahasiswa secara online.</p>
+      </div>
     </div>
+
+    <div className="project-card animate">
+      <img 
+        src="/images/project/rsudblambangan.png" 
+        alt="Portal RSUD Blambangan" 
+        className="project-image" 
+      />
+      <div className="project-content">
+        <h3>Portal RSUD Blambangan</h3>
+        <p><strong>Web Portal RSUD Blambangan</strong> dengan CRUD di Laravel, 
+        dirancang untuk mempermudah pengelolaan aktivitas dan informasi harian 
+        dengan UI yang sederhana.</p>
+      </div>
+    </div>
+
+      <div className="project-card animate">
+      <img 
+        src="/images/project/sibonlabel.png" 
+        alt="Portal RSUD Blambangan" 
+        className="project-image" 
+      />
+      <div className="project-content">
+        <h3>SIBONLABEL</h3>
+        <p><strong>Sistem Informasi BON Label</strong> Sistem Informasi tentang pengebonan kertas medis bermerk Label dirancang untuk pembukuan transaksi 
+        keluar masuk kertas bon label dengan berbasis Laravel.</p>
+      </div>
+    </div>
+
+
   </div>
 
-  <div className="project-card animate">
-    <img 
-      src="/images/project/rsudblambangan.png" 
-      alt="To Do List App" 
-      className="project-image" 
-    />
-    <div className="project-content">
-      <h3>Portal RSUD Blambangan</h3>
-      <p><strong>Web Portal RSUD Blambangan</strong> dengan CRUD di Laravel, 
-      dirancang untuk mempermudah pengelolaan aktivitas dan informasi  harian 
-      dengan UI yang sederhana.</p>
-    </div>
-  </div>
-  </div>
+    
 
+</section>
+
+   
       {/* Contact */}
        <section id="contact" className="contact animate delay-2">
       <h2>Kontak saya</h2>
